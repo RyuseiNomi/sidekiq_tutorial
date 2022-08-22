@@ -2,7 +2,7 @@ class SampleEventWorker
   include Sidekiq::Worker
   sidekiq_options queue: :event
 
-  def perform(id)
+  def perform
     puts 'hello world'
   end
 end
