@@ -15,7 +15,7 @@ RSpec.describe SampleEventWorker do
       SampleEventWorker.drain
 
       expect_result = 2
-      expect(Rails.logger).to have_received(:info).with("task execution completed! : #{expect_result}")
+      expect(Rails.logger).to have_received(:info).with("result: #{expect_result}")
     end
   end
 end

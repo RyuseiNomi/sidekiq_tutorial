@@ -8,6 +8,6 @@ class SampleEventWorker
   # @param [Integer] b
   def perform(a, b)
     result = a + b
-    Rails.logger.info("task execution completed! : #{result}")
+    Rails.logger.info("result: #{result}")
   end
 end
