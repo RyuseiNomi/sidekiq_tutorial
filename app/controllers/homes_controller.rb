@@ -1,6 +1,9 @@
 class HomesController < ApplicationController
+  
+  include RenderConcern
+
   def hello
     SampleEventWorker.perform_async
-    render :hello
+    show
   end
 end

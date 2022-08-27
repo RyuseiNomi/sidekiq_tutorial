@@ -3,7 +3,7 @@ class SlideWorker
   sidekiq_options queue: :event
 
   def perform()
-    puts "\n\nお試し！Sidekiq ジョブとテスト記法\n\n"
+    puts "\n\nお試し！Sidekiq ~テストコードを添えて~\n\n"
     puts "\n\nKanazawa.rb #120\n\n"
     puts "\n\n-------------------------------------------\n\n"
     sleep 8
@@ -30,11 +30,11 @@ class SlideWorker
 
     puts "\n\n今回は簡単な足し算をする処理を作ってみました\n\n"
     puts "\n\n-------------------------------------------\n\n"
-    sleep 5
+    sleep 3
 
     puts "\n\n今日は Sidekiq を実演し、その場でテストコードを書いてみようという企画です！\n\n"
     puts "\n\n-------------------------------------------\n\n"
-    sleep 8
+    sleep 5
 
     puts "\n\n対戦よろしくお願いします。\n\n"
     puts "\n\n-------------------------------------------\n\n"
